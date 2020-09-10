@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5F468C</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="color_text">#fff</color>
+    <color name="dark">#131010</color>
+    <color name="white">#fff</color>
+    <color name="backgraund_blue_color">#1D537C</color>
+    <color name="color_fonte">#101010</color>
+</resources>

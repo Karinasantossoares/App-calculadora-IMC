@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/backgraund_blue_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tamanho_margin"
+        android:text="@string/titulo_toolbar"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tamanho_fonte"
+        app:layout_constraintBottom_toBottomOf="@+id/tb_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/tb_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_apresentation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tamanho_margin"
+        android:layout_marginTop="@dimen/tamanho_margin"
+        android:layout_marginRight="@dimen/tamanho_margin"
+        android:text="@string/menssage_apresetation"
+        android:textColor="@color/color_fonte"
+        android:textSize="@dimen/tamanho_fonte"
+        app:layout_constraintTop_toBottomOf="@id/tb_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_peso"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/tamanho_margin"
+        android:layout_marginTop="@dimen/tamanho_margin"
+        android:layout_marginRight="@dimen/tamanho_margin"
+        android:inputType="numberDecimal"
+        android:hint="@string/peso"
+        android:textColorHint="@color/white"
+        android:textColor="@color/color_fonte"
+        android:textSize="@dimen/tamanho_fonte"
+        app:layout_constraintLeft_toLeftOf="@id/tv_apresentation"
+        app:layout_constraintRight_toRightOf="@id/tv_apresentation"
+        app:layout_constraintTop_toBottomOf="@id/tv_apresentation" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_altura"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/tamanho_margin"
+        android:layout_marginTop="@dimen/tamanho_margin"
+        android:layout_marginRight="@dimen/tamanho_margin"
+        android:inputType="numberDecimal"
+        android:hint="@string/altura"
+        android:textColorHint="@color/white"
+        android:textColor="@color/color_fonte"
+        android:textSize="@dimen/tamanho_fonte"
+        app:layout_constraintLeft_toLeftOf="@id/et_peso"
+        app:layout_constraintRight_toRightOf="@id/et_peso"
+        app:layout_constraintTop_toBottomOf="@id/et_peso" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_result"
+        tools:text="45"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/margin_result"
+        android:textSize="30sp"
+        android:textColor="@color/color_fonte"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/et_altura"
+        app:layout_constraintRight_toRightOf="@id/et_altura"
+        app:layout_constraintTop_toBottomOf="@id/et_altura" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_calc"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginLeft="@dimen/tamanho_margin"
+        android:layout_marginRight="@dimen/tamanho_margin"
+        android:text="@string/calcular"
+        android:textSize="@dimen/fonte_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="20dp"
+        android:background="@color/backgraund_blue_color"
+        android:textColor="@color/white"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
